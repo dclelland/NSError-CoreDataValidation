@@ -23,7 +23,7 @@
         case NSValidationMultipleErrorsError: {
             NSString *string = [NSString stringWithFormat:@"Multiple errors:"];
             for (NSError *error in self.userInfo[NSDetailedErrorsKey]) {
-                string = [string stringByAppendingFormat:@"\n%@", [error coreDataValidationError]];
+                string = [string stringByAppendingFormat:@"\n%@", [error coreDataValidationErrorDescription]];
             }
             return string;
         }
