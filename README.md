@@ -1,4 +1,13 @@
 NSError-CoreDataValidation
 ==========================
 
-NSError category that prints Core Data validation errors.
+NSError category that pretty-prints Core Data validation errors.
+
+    NSError *error;
+    [self.managedObjectContext save:&error];
+    
+    if (error) {
+        NSLog(@"%@", [error coreDataValidationDescription]);
+    }
+
+    >>> Foo entity "bar" count (257) should not be greater than the maximum allowed
