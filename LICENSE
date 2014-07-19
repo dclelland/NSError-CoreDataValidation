@@ -1,0 +1,12 @@
+CXKit
+=====
+
+Private UI library for use with CALX (among other things)
+
+Includes:
+
+- `CXNavigationController` for vertical swipe navigation on table views
+- `CXTableViewController` style reset
+- `CXCollectionViewController` style reset
+- `CXSwipeGestureRecognizer` class for picking up reversible swipes in a given direction
+- And a couple of useful categories

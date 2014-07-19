@@ -7,7 +7,7 @@
 //
 
 #import <CoreData/CoreData.h>
-#import "NSError+CXKit.h"
+#import "NSError+CoreDataValidation.h"
 
 @implementation NSError (CoreDataValidation)
 
